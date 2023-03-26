@@ -1,0 +1,39 @@
+:root {
+    --primary: #ffffff;
+    --primary-75: #ffffff75;
+    --secondary: #000000;
+    --tertiary: #9ca3af;
+    --primaryFont: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    --secondaryFont: "JetBrains Mono", monospace;
+}
+.bg-solid-black {
+    filter: drop-shadow(2px 2px 0px black);
+}
+.bg-blurry-black {
+    filter: drop-shadow(2px 2px 5px black);
+}
+* {
+    margin: 0px;
+    /* border: 1px solid pink; /* Remove after! */
+}
+body {
+    background-color: var(--primary);
+    font-family: var(--primaryFont);
+    color: black;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 18px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--primary-75); 
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-75); 
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--tertiary); 
+}
