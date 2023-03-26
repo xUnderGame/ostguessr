@@ -1,6 +1,7 @@
 :root {
     --bg-color: #131422;
     --bg-color-brighter: #30313a;
+    --bg-color-brighter75: #30313a75;
     --bg-color-darker: #0c0d16; 
     --blue: #1da9d1;
     --green: #2ee728;
@@ -24,19 +25,23 @@ body {
     font-family: var(--font);
     color: var(--text-color);
 }
+html, body {
+    height: 100%;
+    width: 100%;
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 18px;
 }
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px var(--primary-75); 
+    box-shadow: inset 0 0 5px var(--bg-color-brighter); 
     border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-75); 
+    background: var(--bg-color-brighter); 
     border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--tertiary); 
+    background: var(--bg-color-brighter75); 
 }

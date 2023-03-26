@@ -10,3 +10,18 @@ img {
     width: 100px;
     height: 100px;
 }
+main {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#game {
+    background-color: var(--bg-color-brighter);
+    height: 100%;
+    width: 60%;
+}
+.textCenter {
+    text-align: center;
+}
