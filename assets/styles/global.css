@@ -1,10 +1,13 @@
 :root {
-    --primary: #ffffff;
-    --primary-75: #ffffff75;
-    --secondary: #000000;
-    --tertiary: #9ca3af;
-    --primaryFont: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
-    --secondaryFont: "JetBrains Mono", monospace;
+    --bg-color: #131422;
+    --bg-color-brighter: #30313a;
+    --bg-color-darker: #0c0d16; 
+    --blue: #1da9d1;
+    --green: #2ee728;
+    --yellow: #e4d01a;
+    --red: #d11d3b;
+    --text-color: #ffffff;
+    --font: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 .bg-solid-black {
     filter: drop-shadow(2px 2px 0px black);
@@ -17,9 +20,9 @@
     /* border: 1px solid pink; /* Remove after! */
 }
 body {
-    background-color: var(--primary);
-    font-family: var(--primaryFont);
-    color: black;
+    background-color: var(--bg-color);
+    font-family: var(--font);
+    color: var(--text-color);
 }
 
 /* Scrollbar */
