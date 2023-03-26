@@ -13,7 +13,7 @@
         <img id="settings" src="assets/images/placeholder.png" alt="Settings icon">
         <h1>Ostguessr</h1>
         <div id="sidebar">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" viewBox="0 0 16 16"><path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16"><path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
             <img id="help" src="assets/images/placeholder.png" alt="Help icon">
         </div>
     </header>
@@ -21,9 +21,15 @@
         <div class="textCenter">
             <h2 id="mainTitle">Game #count</h2>
         </div>
-        <section id="game" >
-            <p>Placeholder text uwu</p>
+        <section id="game">
+            <div id="guess1" class="guessDiv">
+                <audio id="audio1">
+                    <source src="assets/audios/testSound.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="playAudio(1)">click me</button>
+            </div>
         </section>
     </main>
+    <script src="assets/scripts/index.js"></script>
 </body>
 </html>
